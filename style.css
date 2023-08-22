@@ -1,0 +1,42 @@
+.Container{
+    width: 1250px;
+    height: 620px;
+    border: 10px solid black;
+    position:relative;
+}
+ .square{
+    width: 90px;
+    height: 90px;
+    background-color: aquamarine;
+    position: absolute;
+    animation-name: cube;
+    animation-duration: 5s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+ }
+ @keyframes cube{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        /* top: 0px; */
+        left: 0px;
+        top: 530px;
+    }
+    50%{
+        left: 1160px;
+        top: 530px;
+    }
+    75%{
+        top: 0px;
+        left: 1160px;
+    }
+    100%{
+          
+        top: 0; 
+        left: 0;    
+    }
+ } 
